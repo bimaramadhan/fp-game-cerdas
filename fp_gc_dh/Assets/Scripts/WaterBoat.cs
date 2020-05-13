@@ -13,7 +13,28 @@ public class WaterBoat : MonoBehaviour
     public float Power = 5f;
     public float MaxSpeed = 10f;
     public float Drag = 0.1f;
-
+    
+    void OnCollisionEnter(Collision col){
+        if(col.gameObject.name == "Buoy"){
+            Destroy (col.gameObject);
+        }
+        if(col.gameObject.name == "Buoy (1)"){
+            Destroy (col.gameObject);
+        }
+        if(col.gameObject.name == "Buoy (2)"){
+            Destroy (col.gameObject);
+        }
+        if(col.gameObject.name == "Buoy (3)"){
+            Destroy (col.gameObject);
+        }
+        if(col.gameObject.name == "Buoy (4)"){
+            Destroy (col.gameObject);
+        }
+        if(col.gameObject.name == "Buoy (5)"){
+            Destroy (col.gameObject);
+        }
+    }
+    
     //used Components
     protected Rigidbody Rigidbody;
     protected Quaternion StartRotation;
