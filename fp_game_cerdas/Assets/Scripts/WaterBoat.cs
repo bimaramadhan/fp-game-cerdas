@@ -63,9 +63,12 @@ public class WaterBoat : MonoBehaviour
         if (ParticleSystem != null)
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+            {
                 ParticleSystem.Play();
+            }
             else
                 ParticleSystem.Pause();
+
         }
 
         //moving forward

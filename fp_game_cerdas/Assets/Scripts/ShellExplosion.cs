@@ -10,7 +10,6 @@ public class ShellExplosion : MonoBehaviour
     public float m_MaxLifeTime = 2f;                    // The time in seconds before the shell is removed.
     public float m_ExplosionRadius = 5f;                // The maximum distance away from the explosion Ships can be and are still affected.
 
-
     private void Start ()
     {
         // If it isn't destroyed by then, destroy the shell after it's lifetime.
@@ -60,7 +59,8 @@ public class ShellExplosion : MonoBehaviour
         m_ExplosionAudio.Play();
 
         // Once the particles have finished, destroy the gameobject they are on.
-        Destroy (m_ExplosionParticles.gameObject, m_ExplosionParticles.duration);
+        // Destroy (m_ExplosionParticles.gameObject, m_ExplosionParticles.main.duration);
+        Destroy (Instantiate(m_ExplosionParticles), m_ExplosionParticles.main.duration);
 
         // Destroy the shell.
         Destroy (gameObject);
