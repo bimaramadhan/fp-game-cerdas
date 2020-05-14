@@ -270,7 +270,7 @@ MonoBehaviour:
   AirDrag: 1
   WaterDrag: 10
   AffectDirection: 1
-  AttachToSurface: 0
+  AttachToSurface: 1
   FloatPoints:
   - {fileID: 1372893609}
   - {fileID: 1703257837}

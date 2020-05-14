@@ -67,7 +67,7 @@ public class WaterBoat : MonoBehaviour
                 ParticleSystem.Play();
             }
             else
-                ParticleSystem.Pause();
+                ParticleSystem.Stop();
 
         }
 
