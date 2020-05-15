@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Motor: {fileID: 698470398893066850}
-  SteerPower: 200
+  SteerPower: 500
   Power: 20
   MaxSpeed: 30
   Drag: 0.1
@@ -415,10 +415,11 @@ MonoBehaviour:
   m_ShootingAudio: {fileID: 698470400260969270}
   m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
+  m_ShootDirection: 0
   m_MinLaunchForce: 15
   m_MaxLaunchForce: 30
   m_MaxChargeTime: 0.75
-  m_ShootDirection: 0
+  m_FireRate: 5
 --- !u!114 &8610972898589912206
 MonoBehaviour:
   m_ObjectHideFlags: 0
