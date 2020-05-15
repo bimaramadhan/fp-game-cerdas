@@ -215,9 +215,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 200
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 200
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -620,8 +620,8 @@ Rigidbody:
   m_GameObject: {fileID: 6257478515854978790}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -638,8 +638,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2240.046, y: 1195.6251, z: 703.20276}
-  m_Center: {x: 5.701431, y: 603.40106, z: 7.3114395}
+  m_Size: {x: 2240.046, y: 837.5123, z: 703.20276}
+  m_Center: {x: 5.701431, y: 424.34467, z: 7.3114395}
 --- !u!114 &499224777
 MonoBehaviour:
   m_ObjectHideFlags: 0

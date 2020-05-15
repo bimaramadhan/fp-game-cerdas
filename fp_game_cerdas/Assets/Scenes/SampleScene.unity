@@ -33,7 +33,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 16
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -1574,6 +1574,16 @@ PrefabInstance:
       propertyPath: m_MaterialTemplate
       value: 
       objectReference: {fileID: 2100000, guid: 13e6fd6de7891ad428e5279db83275c9, type: 2}
+    - target: {fileID: 3246591142465886063, guid: 7c166051b01d52446b92a6d5f7bc6cf1,
+        type: 3}
+      propertyPath: m_BakeLightProbesForTrees
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246591142465886063, guid: 7c166051b01d52446b92a6d5f7bc6cf1,
+        type: 3}
+      propertyPath: m_DrawTreesAndFoliage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c166051b01d52446b92a6d5f7bc6cf1, type: 3}
 --- !u!4 &8610972898517961359 stripped
@@ -1644,15 +1654,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 698470400260969256, guid: be550fb17dc78a141bba1b66d857784e,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 698470400260969266, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_Name
       value: Player Boat
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177583253768985563, guid: be550fb17dc78a141bba1b66d857784e,
-        type: 3}
-      propertyPath: m_FireRate
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8610972898589912206, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
