@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a337ef79178f882458594bcc5e8c73f8,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -649,7 +650,7 @@ PrefabInstance:
     - target: {fileID: 6257478515854881478, guid: 5d8e5eb139a1ca546b3117aade8ad4c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 112.479996
+      value: 274.4
       objectReference: {fileID: 0}
     - target: {fileID: 6257478515854881478, guid: 5d8e5eb139a1ca546b3117aade8ad4c3,
         type: 3}
@@ -659,7 +660,7 @@ PrefabInstance:
     - target: {fileID: 6257478515854881478, guid: 5d8e5eb139a1ca546b3117aade8ad4c3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 97.259995
+      value: 154.3
       objectReference: {fileID: 0}
     - target: {fileID: 6257478515854881478, guid: 5d8e5eb139a1ca546b3117aade8ad4c3,
         type: 3}
@@ -881,7 +882,7 @@ PrefabInstance:
     - target: {fileID: 76324255901344958, guid: 2edb99d79bd9a4e4398b6b1dfbb2724c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 113.58299
+      value: 275.503
       objectReference: {fileID: 0}
     - target: {fileID: 76324255901344958, guid: 2edb99d79bd9a4e4398b6b1dfbb2724c,
         type: 3}
@@ -891,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 76324255901344958, guid: 2edb99d79bd9a4e4398b6b1dfbb2724c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 130.68
+      value: 187.72
       objectReference: {fileID: 0}
     - target: {fileID: 76324255901344958, guid: 2edb99d79bd9a4e4398b6b1dfbb2724c,
         type: 3}
@@ -1218,7 +1219,7 @@ PrefabInstance:
     - target: {fileID: 3346731553572222004, guid: 8afa39bf2a27267458a1dfc7ce0fb8f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 113.11
+      value: 275.03
       objectReference: {fileID: 0}
     - target: {fileID: 3346731553572222004, guid: 8afa39bf2a27267458a1dfc7ce0fb8f9,
         type: 3}
@@ -1228,7 +1229,7 @@ PrefabInstance:
     - target: {fileID: 3346731553572222004, guid: 8afa39bf2a27267458a1dfc7ce0fb8f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 118.38
+      value: 175.42001
       objectReference: {fileID: 0}
     - target: {fileID: 3346731553572222004, guid: 8afa39bf2a27267458a1dfc7ce0fb8f9,
         type: 3}
@@ -1299,7 +1300,7 @@ PrefabInstance:
     - target: {fileID: 102685698243545143, guid: 1089d889c795c8a4b9155ab7212914ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 116.2
+      value: 278.12
       objectReference: {fileID: 0}
     - target: {fileID: 102685698243545143, guid: 1089d889c795c8a4b9155ab7212914ff,
         type: 3}
@@ -1309,7 +1310,7 @@ PrefabInstance:
     - target: {fileID: 102685698243545143, guid: 1089d889c795c8a4b9155ab7212914ff,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 107.3
+      value: 164.34001
       objectReference: {fileID: 0}
     - target: {fileID: 102685698243545143, guid: 1089d889c795c8a4b9155ab7212914ff,
         type: 3}
@@ -1602,7 +1603,7 @@ PrefabInstance:
     - target: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 97.61
+      value: 259.53
       objectReference: {fileID: 0}
     - target: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
@@ -1612,7 +1613,7 @@ PrefabInstance:
     - target: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 97.22
+      value: 154.26001
       objectReference: {fileID: 0}
     - target: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
