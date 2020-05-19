@@ -13,10 +13,11 @@ public class ShipShooting : MonoBehaviour
     public AudioSource m_ShootingAudio;         // Reference to the audio source used to play the shooting audio. NB: different to the movement audio source.
     public AudioClip m_ChargingClip;            // Audio that plays when each shot is charging up.
     public AudioClip m_FireClip;                // Audio that plays when each shot is fired.
+    public int m_ShootDirection = 0;
     public float m_MinLaunchForce = 15f;        // The force given to the shell if the fire button is not held.
     public float m_MaxLaunchForce = 30f;        // The force given to the shell if the fire button is held for the max charge time.
     public float m_MaxChargeTime = 0.75f;       // How long the shell can charge for before it is fired at max force.
-    public int m_ShootDirection = 0;
+    public float m_FireRate = 15f;
 
     private Slider m_AimSlider;                  // A child of the tank that displays the current launch force.
     private string m_FireButton;                // The input axis that is used for launching shells.
@@ -24,6 +25,7 @@ public class ShipShooting : MonoBehaviour
     private float m_CurrentLaunchForce;         // The force that will be given to the shell when the fire button is released.
     private float m_ChargeSpeed;                // How fast the launch force increases, based on the max charge time.
     private bool m_Fired;                       // Whether or not the shell has been launched with this button press.
+    private float m_nextShoot = 0f;
 
 
     private void OnEnable()
@@ -79,7 +81,7 @@ public class ShipShooting : MonoBehaviour
         // The slider should have a default value of the minimum launch force.
         m_AimSlider.value = m_MinLaunchForce;
 
-                // If the max force has been exceeded and the shell hasn't yet been launched...
+        // If the max force has been exceeded and the shell hasn't yet been launched...
         if (m_CurrentLaunchForce >= m_MaxLaunchForce && !m_Fired)
         {
             // ... use the max force and launch the shell.
@@ -87,7 +89,7 @@ public class ShipShooting : MonoBehaviour
             Fire ();
         }
         // Otherwise, if the fire button has just started being pressed...
-        else if (Input.GetButtonDown (m_FireButton))
+        else if (Input.GetButtonDown (m_FireButton) && Time.time >= m_nextShoot)
         {
             // ... reset the fired flag and reset the launch force.
             m_Fired = false;
@@ -106,8 +108,9 @@ public class ShipShooting : MonoBehaviour
             m_AimSlider.value = m_CurrentLaunchForce;
         }
         // Otherwise, if the fire button is released and the shell hasn't been launched yet...
-        else if (Input.GetButtonUp (m_FireButton) && !m_Fired)
+        else if (Input.GetButtonUp (m_FireButton) && !m_Fired && Time.time >= m_nextShoot)
         {
+            m_nextShoot = Time.time + 1f / m_FireRate;
             // ... launch the shell.
             Fire ();
         }
