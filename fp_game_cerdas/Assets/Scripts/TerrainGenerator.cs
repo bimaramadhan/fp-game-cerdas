@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class TerrainGenerator : MonoBehaviour
 {
@@ -10,12 +11,17 @@ public class TerrainGenerator : MonoBehaviour
     public float offsetX = 100f;
     public float offsetY = 100f;
 
+    public NavMeshSurface surface;
+
+
     void Start(){
         offsetX = Random.Range(0f, 999f);
         offsetY = Random.Range(0f, 999f);
 
         Terrain terrain = GetComponent<Terrain>();
-        terrain.terrainData = GenerateTerrain(terrain.terrainData);    
+        terrain.terrainData = GenerateTerrain(terrain.terrainData);
+
+        surface.BuildNavMesh();    
     }
     
     void Update() {
