@@ -5323,7 +5323,7 @@ GameObject:
   - component: {fileID: 490162825382360079}
   m_Layer: 9
   m_Name: Enemy 1
-  m_TagString: Player
+  m_TagString: EnemyShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5585,7 +5585,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4507000134566395422}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 10
+  m_Radius: 20
   m_Speed: 50
   m_Acceleration: 8
   avoidancePriority: 50
@@ -5597,7 +5597,7 @@ NavMeshAgent:
   m_Height: 10
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 1
 --- !u!1 &4507000134974268567
 GameObject:
   m_ObjectHideFlags: 0
