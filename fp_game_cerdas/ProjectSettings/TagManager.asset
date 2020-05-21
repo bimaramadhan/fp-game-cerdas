@@ -8,6 +8,7 @@ TagManager:
   - EnemyShip
   - HitRight
   - HitLeft
+  - Chest
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - PostProcessing
   - Player
   - Island
-  - 
-  - 
+  - Chest
+  - Enemy
   - 
   - 
   - 
