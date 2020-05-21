@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: a337ef79178f882458594bcc5e8c73f8,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1076,8 +1076,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PlayerNumber: 1
   m_Shell: {fileID: 6019180038976095211, guid: 71f9b56a15d752c469fda0350c58af29, type: 3}
-  m_FireTransformright: {fileID: 589179135}
-  m_FireTransformleft: {fileID: 1532880518}
+  m_FireTransformright: {fileID: 1823998112}
+  m_FireTransformleft: {fileID: 1914665699}
   m_ShootingAudio: {fileID: 669378405}
   m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
@@ -1944,6 +1944,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6678345593628887040, guid: c28d1882ab437604ea259242a6d8caef,
     type: 3}
   m_PrefabInstance: {fileID: 6678345595096752518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1823998112 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5263659597809963299, guid: 489547a863bb9414a8d8f117245346f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4053658305404586515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1914665699 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5263659599106212123, guid: 489547a863bb9414a8d8f117245346f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4053658305404586515}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1999610017
 GameObject:
