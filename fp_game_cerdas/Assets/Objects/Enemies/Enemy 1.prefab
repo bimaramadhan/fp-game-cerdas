@@ -5316,11 +5316,10 @@ GameObject:
   - component: {fileID: 4507000134566395397}
   - component: {fileID: 4507000134566395418}
   - component: {fileID: 4507000134566395419}
-  - component: {fileID: 4507000134566395416}
-  - component: {fileID: 8135501037754709751}
   - component: {fileID: 4664939373432537506}
   - component: {fileID: 490162825382360078}
   - component: {fileID: 490162825382360079}
+  - component: {fileID: 1935606891}
   m_Layer: 9
   m_Name: Enemy 1
   m_TagString: EnemyShip
@@ -5502,49 +5501,6 @@ MonoBehaviour:
   - {fileID: 4507000134266434751}
   - {fileID: 4507000134082580506}
   - {fileID: 4507000134535534384}
---- !u!114 &4507000134566395416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4507000134566395422}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3b6b94d40e636a459f533277774816e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Motor: {fileID: 4507000133752989518}
-  SteerPower: 400
-  Power: 20
-  MaxSpeed: 30
-  Drag: 0.1
---- !u!114 &8135501037754709751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4507000134566395422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 578e2e4e712b9cd48b4f14f088356d1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlayerNumber: 1
-  m_Shell: {fileID: 6019180038976095211, guid: 71f9b56a15d752c469fda0350c58af29, type: 3}
-  m_FireTransformright: {fileID: 5263659597809963299}
-  m_FireTransformleft: {fileID: 5263659599106212123}
-  m_AimSliderRight: {fileID: 5263659597876168149}
-  m_AimSliderLeft: {fileID: 5263659598479494930}
-  m_ShootingAudio: {fileID: 4507000134566395418}
-  m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
-  m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
-  m_ShootDirection: 0
-  m_MinLaunchForce: 15
-  m_MaxLaunchForce: 30
-  m_MaxChargeTime: 0.75
-  m_FireRate: 5
 --- !u!114 &4664939373432537506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5585,7 +5541,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4507000134566395422}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 20
+  m_Radius: 30
   m_Speed: 50
   m_Acceleration: 8
   avoidancePriority: 50
@@ -5597,7 +5553,33 @@ NavMeshAgent:
   m_Height: 10
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 1
+  m_ObstacleAvoidanceType: 3
+--- !u!114 &1935606891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4507000134566395422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3391e2a8452cda1448c146deabd95edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerNumber: 1
+  m_Shell: {fileID: 6019180038976095211, guid: 71f9b56a15d752c469fda0350c58af29, type: 3}
+  m_FireTransformright: {fileID: 5263659597809963299}
+  m_FireTransformleft: {fileID: 5263659599106212123}
+  m_ShootingAudio: {fileID: 4507000134566395418}
+  m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
+  m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
+  m_ShootDirection: 0
+  m_MinLaunchForce: 30
+  m_MaxLaunchForce: 50
+  m_MaxChargeTime: 0.75
+  m_FireRate: 15
+  useInvoke: 0
+  running: 0
 --- !u!1 &4507000134974268567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5812,7 +5794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5263659597809963299}
   m_Layer: 9
-  m_Name: FireTransform right
+  m_Name: FireTransform rightEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5825,13 +5807,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5263659597809963298}
-  m_LocalRotation: {x: -0.09130895, y: 0.6885502, z: 0.08557092, w: 0.7143102}
-  m_LocalPosition: {x: 4.01495, y: 4.1224356, z: 0.38426208}
+  m_LocalRotation: {x: -0.12512521, y: -0.00022603077, z: -0.0017922369, w: 0.99213934}
+  m_LocalPosition: {x: -0.5, y: 4.76, z: 8.88}
   m_LocalScale: {x: 1, y: 1, z: 1.9252257}
   m_Children: []
   m_Father: {fileID: 4507000134494443548}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: -14.376, y: -2.078, z: -0.20700002}
+  m_LocalEulerAnglesHint: {x: -14.376, y: 0, z: -0.20700002}
 --- !u!1 &5263659597876168151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5856,17 +5838,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5263659597876168151}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5263659598859674062}
   m_Father: {fileID: 5263659597574128157}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.507, y: -0.15}
+  m_AnchoredPosition: {x: -0.7, y: 15.2}
   m_SizeDelta: {x: 0.301, y: 17.264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5263659597876168149
@@ -6052,17 +6034,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5263659598479494940}
-  m_LocalRotation: {x: -0, y: 0, z: -0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.65}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5263659598372927552}
   m_Father: {fileID: 5263659597574128157}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12.51, y: -0.14}
+  m_AnchoredPosition: {x: -13.8, y: 24.4}
   m_SizeDelta: {x: 0.262, y: 17.264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5263659598479494930
@@ -6161,7 +6143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5263659599106212123}
   m_Layer: 9
-  m_Name: FireTransform left
+  m_Name: FireTransform leftEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6174,10 +6156,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5263659599106212122}
-  m_LocalRotation: {x: -0.036299642, y: -0.71926403, z: -0.03516039, w: 0.69289637}
-  m_LocalPosition: {x: -4.35524, y: 4.1974564, z: 0.07274628}
+  m_LocalRotation: {x: -0.050505795, y: 0.00008859215, z: 0.0017518576, w: 0.9987223}
+  m_LocalPosition: {x: 1.27, y: 3.62, z: 8.9}
   m_LocalScale: {x: 1, y: 1, z: 1.9252257}
   m_Children: []
   m_Father: {fileID: 4507000134494443548}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: -5.7900004, y: -182.15, z: 0.201}
+  m_LocalEulerAnglesHint: {x: -5.7900004, y: 0, z: 0.201}
