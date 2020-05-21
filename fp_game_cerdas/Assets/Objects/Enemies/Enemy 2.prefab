@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2137697590039050880}
   - component: {fileID: 1271908328956521660}
   - component: {fileID: 9195915400867775728}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4763,7 +4763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4089253390627148074}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4801,7 +4801,7 @@ GameObject:
   - component: {fileID: 1770573051}
   - component: {fileID: 1770573052}
   - component: {fileID: 1770573061}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Enemy 2
   m_TagString: EnemyShip
   m_Icon: {fileID: 0}
@@ -4816,7 +4816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4089253391020346274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 252.53, y: -0.2, z: 185.1}
+  m_LocalPosition: {x: 252.53, y: -1, z: 185.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4089253392066476899}
@@ -5000,6 +5000,7 @@ MonoBehaviour:
   m_FullHealthColor: {r: 1, g: 0.7137255, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   m_ExplosionPrefab: {fileID: 151086, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 3}
+  chest: {fileID: 81586277958006104, guid: 885189f5b3dbdaa44868e75249c62c4b, type: 3}
 --- !u!114 &1770573051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5070,7 +5071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4089253391056970380}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5100,7 +5101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4089253391851574002}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Motor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5130,7 +5131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4089253392066476899}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5160,7 +5161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4089253392402432259}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5190,7 +5191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4089253392404518930}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5220,7 +5221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4089253392583665062}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5252,7 +5253,7 @@ GameObject:
   - component: {fileID: 4499828530637690171}
   - component: {fileID: 4499828530637690172}
   - component: {fileID: 4499828530637690173}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5325,7 +5326,7 @@ GameObject:
   - component: {fileID: 4499828531417738414}
   - component: {fileID: 4499828531417738412}
   - component: {fileID: 4499828531417738413}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5396,7 +5397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4499828531598762567}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5433,7 +5434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4499828531906073963}
   - component: {fileID: 4499828531906073962}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: EnemyHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5521,7 +5522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5710459260103686817}
   - component: {fileID: 5710459260103686830}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: AimSlider left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5607,7 +5608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5710459260202388988}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5643,7 +5644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5710459260533404839}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FireTransform left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5673,7 +5674,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5710459260789904498}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5712,7 +5713,7 @@ GameObject:
   - component: {fileID: 5710459261010098092}
   - component: {fileID: 5710459261010098095}
   - component: {fileID: 5710459261010098094}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5812,7 +5813,7 @@ GameObject:
   - component: {fileID: 5710459261288406975}
   - component: {fileID: 5710459261288406973}
   - component: {fileID: 5710459261288406972}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5885,7 +5886,7 @@ GameObject:
   - component: {fileID: 5710459261631524049}
   - component: {fileID: 5710459261631524063}
   - component: {fileID: 5710459261631524062}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5957,7 +5958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5710459261782323304}
   - component: {fileID: 5710459261782323305}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: AimSlider right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6043,7 +6044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5710459261820740767}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FireTransform right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6076,7 +6077,7 @@ GameObject:
   - component: {fileID: 5727469054379441419}
   - component: {fileID: 5727469054378475467}
   - component: {fileID: 5727469054390080203}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: super_sail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

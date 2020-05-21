@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 1532801063}
   m_Layer: 9
   m_Name: HitRight
-  m_TagString: HitRight
+  m_TagString: PlayerShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532801062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 2, z: 0}
+  m_LocalPosition: {x: 37.8, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698470400198473008}
@@ -500,6 +500,7 @@ MonoBehaviour:
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   m_ExplosionPrefab: {fileID: 151086, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 3}
+  chest: {fileID: 81586277958006104, guid: 885189f5b3dbdaa44868e75249c62c4b, type: 3}
 --- !u!1 &698470400291076637
 GameObject:
   m_ObjectHideFlags: 0

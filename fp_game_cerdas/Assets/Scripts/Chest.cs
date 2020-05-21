@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomSpawner : MonoBehaviour
+public class Chest : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,12 @@ public class RandomSpawner : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter(Collision col) {
+        if(col.gameObject.tag.Equals ("Player")) {
+            CoinScript.coinValue += 100;
+            Destroy(gameObject);
+        }
     }
 }

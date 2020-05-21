@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2848088155871563800}
   - component: {fileID: 2848088155871563799}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: AimSlider left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2848088155974608709}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2848088156430392862}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FireTransform left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2848088156527525579}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 2848088157017502982}
   - component: {fileID: 2848088157017502980}
   - component: {fileID: 2848088157017502981}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 2848088157313932565}
   - component: {fileID: 2848088157313932566}
   - component: {fileID: 2848088157313932567}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 2848088157496002152}
   - component: {fileID: 2848088157496002150}
   - component: {fileID: 2848088157496002151}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2848088157558345254}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FireTransform right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2848088157683374801}
   - component: {fileID: 2848088157683374800}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: AimSlider right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 5766335047149642013}
   - component: {fileID: 2192457547023788530}
   - component: {fileID: 3330137279105916583}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Enemy 3
   m_TagString: EnemyShip
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766335047194511413}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766335047289125779}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -880,7 +880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766335048064684506}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766335048483010635}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Motor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -940,7 +940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766335048553565983}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,7 +970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766335049070555819}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1000,7 +1000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766335049072667578}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 6254175325437755266}
   - component: {fileID: 6254175325437755269}
   - component: {fileID: 6254175325437755268}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,7 +1103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6254175326540499198}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 6254175326721230359}
   - component: {fileID: 6254175326721230357}
   - component: {fileID: 6254175326721230356}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,7 +1213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6254175327371984850}
   - component: {fileID: 6254175327371984851}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: EnemyHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1303,7 @@ GameObject:
   - component: {fileID: 7489120077814095207}
   - component: {fileID: 7489120077813096359}
   - component: {fileID: 7489120077824422567}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: tiny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 8436211623388336185}
   - component: {fileID: 8727809525240382981}
   - component: {fileID: 1668483822476176969}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}

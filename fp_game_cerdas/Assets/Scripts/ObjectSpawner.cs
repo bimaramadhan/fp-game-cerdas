@@ -12,6 +12,8 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject rock4;
     public GameObject rock5;
     public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject chest;
 
     public int no1;
     public int no2;
@@ -19,10 +21,15 @@ public class ObjectSpawner : MonoBehaviour
     public int no4;
     public int no5;
     public int noEnemy1;
+    public int noEnemy2;
+    public int noChest;
 
     public float xSize;
     public float zSize;
+    public float Timer;
 
+    private int j = 0;
+    private int k = 0;
     public NavMeshSurface navMeshSurface;
 
     private List<Vector3> usedPoints;
@@ -38,7 +45,20 @@ public class ObjectSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Timer -= Time.deltaTime;
+        if (Timer <= 0f && k < noEnemy1)
+        {
+            GenerateEnemy(enemy1);
+            Timer = 3f;
+            k ++;
+        }
+
+        if (Timer <= 0f && j < noEnemy2)
+        {
+            GenerateEnemy(enemy2);
+            Timer = 10f;
+            j ++;
+        }     
     }
 
     void GenerateObject(GameObject go, int amount)
@@ -55,6 +75,21 @@ public class ObjectSpawner : MonoBehaviour
         }
     }
 
+    void GenerateEnemy(GameObject go)
+    {
+        if (go == null) return;
+  
+        // for(int i = 0; i < amount; i++)
+        // {
+            GameObject tmp = Instantiate(go);
+
+            Vector3 randomPoint = GetRandomPoint();
+            usedPoints.Add(randomPoint);
+            tmp.gameObject.transform.position = new Vector3(randomPoint.x, tmp.transform.position.y, randomPoint.z);
+            // i++;
+        // }
+    }
+
     void GenerateObjects()
     {
         GenerateObject(rock1, no1);
@@ -62,7 +97,7 @@ public class ObjectSpawner : MonoBehaviour
         GenerateObject(rock3, no3);
         GenerateObject(rock4, no4);
         GenerateObject(rock5, no5);
-        GenerateObject(enemy1, noEnemy1);
+        GenerateObject(chest, noChest);
     }
 
     Vector3 GetRandomPoint()
