@@ -17,7 +17,7 @@ public class EnemyShot : MonoBehaviour
     public float m_MinLaunchForce = 30f;        // The force given to the shell if the fire button is not held.
     public float m_MaxLaunchForce = 50f;        // The force given to the shell if the fire button is held for the max charge time.
     public float m_MaxChargeTime = 0.75f;       // How long the shell can charge for before it is fired at max force.
-    public float m_FireRate = 15f;
+    public int shootDelay;
     public float shootAngle = 50f;
 
     private GameObject goPlayer;
@@ -26,7 +26,7 @@ public class EnemyShot : MonoBehaviour
     private string m_AltFireButton;                // The input axis that is used for launching shells.
     private float m_CurrentLaunchForce;         // The force that will be given to the shell when the fire button is released.
     private float m_ChargeSpeed;                // How fast the launch force increases, based on the max charge time.
-    private bool m_Fired;                       // Whether or not the shell has been launched with this button press.
+    // private bool m_Fired;                       // Whether or not the shell has been launched with this button press.
     private float m_nextShoot = 0f;
 
     public bool useInvoke;
@@ -46,8 +46,10 @@ public class EnemyShot : MonoBehaviour
 
         goPlayer = GameObject.FindWithTag("Player");
 
+        shootDelay = Random.Range(3,5);
+
         if (useInvoke)
-             InvokeRepeating("TestInvoke", 0, 3);
+             InvokeRepeating("TestCoroutine", 0, Random.Range(1, 5));
         else
              StartCoroutine(TestCoroutine());
     }
@@ -83,7 +85,7 @@ public class EnemyShot : MonoBehaviour
     private void Fire ()
     {
         // Set the fired flag so only Fire is only called once.
-        m_Fired = true;
+        // m_Fired = true;
 
         // Create an instance of the shell and store a reference to it's rigidbody.
         Rigidbody shellInstance =

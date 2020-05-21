@@ -13,6 +13,7 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject rock5;
     public GameObject enemy1;
     public GameObject enemy2;
+    public GameObject enemy3;
     public GameObject chest;
 
     public int no1;
@@ -22,6 +23,7 @@ public class ObjectSpawner : MonoBehaviour
     public int no5;
     public int noEnemy1;
     public int noEnemy2;
+    public int noEnemy3;
     public int noChest;
 
     public float xSize;
@@ -56,6 +58,7 @@ public class ObjectSpawner : MonoBehaviour
         if (Timer <= 0f && j < noEnemy2)
         {
             GenerateEnemy(enemy2);
+            GenerateEnemy(enemy3);
             Timer = 10f;
             j ++;
         }     
