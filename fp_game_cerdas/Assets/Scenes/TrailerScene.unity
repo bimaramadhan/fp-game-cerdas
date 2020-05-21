@@ -280,7 +280,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338874069}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -308,7 +308,7 @@ RectTransform:
   - {fileID: 1681322192}
   - {fileID: 499015133}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -391,7 +391,7 @@ Transform:
   - {fileID: 170076735}
   - {fileID: 905732934}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &497470674
 MonoBehaviour:
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497470671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2efec26ec0e4ce4eabc2736716e2b60, type: 3}
   m_Name: 
@@ -601,7 +601,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 64.672005, y: -3.943, z: -4.591}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -641,13 +641,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50f835d814da1fe4f994cce997f8c1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8610972898517961359}
-  offsetPosition: {x: 0, y: 40, z: -40}
+  offsetPosition: {x: 0, y: 23, z: -30}
   offsetPositionSpace: 1
   lookAt: 1
 --- !u!4 &784896381 stripped
@@ -1215,6 +1215,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2188260174273562297, guid: f7d819d3258b57849916bab68b428ce6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2188260174273562299, guid: f7d819d3258b57849916bab68b428ce6,
         type: 3}
       propertyPath: m_Name
@@ -1304,10 +1309,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1532801063, guid: be550fb17dc78a141bba1b66d857784e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1346,7 +1347,7 @@ PrefabInstance:
     - target: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
@@ -1363,6 +1364,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 698470400260969256, guid: be550fb17dc78a141bba1b66d857784e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 698470400260969266, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_Name
@@ -1378,14 +1384,29 @@ PrefabInstance:
       propertyPath: m_FillImage
       value: 
       objectReference: {fileID: 2058157749}
+    - target: {fileID: 8610972898589912206, guid: be550fb17dc78a141bba1b66d857784e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9093089918797023023, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9093089919258637377, guid: be550fb17dc78a141bba1b66d857784e,
         type: 3}
       propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093089919444035833, guid: be550fb17dc78a141bba1b66d857784e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093089919779971646, guid: be550fb17dc78a141bba1b66d857784e,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -5013,7 +5013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627446d065a32b840a61843cae8bf259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 0}
+  _destination: {fileID: 698470400198473008, guid: be550fb17dc78a141bba1b66d857784e,
+    type: 3}
 --- !u!114 &1770573052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5037,7 +5038,7 @@ MonoBehaviour:
   m_MinLaunchForce: 50
   m_MaxLaunchForce: 50
   m_MaxChargeTime: 0.75
-  m_FireRate: 15
+  shootDelay: 0
   shootAngle: 20
   useInvoke: 0
   running: 0
@@ -5050,7 +5051,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4089253391020346274}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 5
+  m_Radius: 25
   m_Speed: 30
   m_Acceleration: 8
   avoidancePriority: 50
