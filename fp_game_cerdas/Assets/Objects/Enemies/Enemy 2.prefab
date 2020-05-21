@@ -4797,9 +4797,10 @@ GameObject:
   - component: {fileID: 4089253391020346297}
   - component: {fileID: 4089253391020346278}
   - component: {fileID: 4089253391020346279}
-  - component: {fileID: 4089253391020346276}
-  - component: {fileID: 8562747939952460619}
   - component: {fileID: 5084237775244227614}
+  - component: {fileID: 1770573051}
+  - component: {fileID: 1770573052}
+  - component: {fileID: 1770573061}
   m_Layer: 9
   m_Name: Enemy 2
   m_TagString: EnemyShip
@@ -4981,49 +4982,6 @@ MonoBehaviour:
   - {fileID: 4089253392402432259}
   - {fileID: 4089253392583665062}
   - {fileID: 4089253391056970380}
---- !u!114 &4089253391020346276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4089253391020346274}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3b6b94d40e636a459f533277774816e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Motor: {fileID: 4089253391851574002}
-  SteerPower: 400
-  Power: 20
-  MaxSpeed: 30
-  Drag: 0.1
---- !u!114 &8562747939952460619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4089253391020346274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 578e2e4e712b9cd48b4f14f088356d1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlayerNumber: 1
-  m_Shell: {fileID: 6019180038976095211, guid: 71f9b56a15d752c469fda0350c58af29, type: 3}
-  m_FireTransformright: {fileID: 5710459261820740767}
-  m_FireTransformleft: {fileID: 5710459260533404839}
-  m_AimSliderRight: {fileID: 5710459261782323305}
-  m_AimSliderLeft: {fileID: 5710459260103686830}
-  m_ShootingAudio: {fileID: 4089253391020346278}
-  m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
-  m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
-  m_ShootDirection: 0
-  m_MinLaunchForce: 15
-  m_MaxLaunchForce: 30
-  m_MaxChargeTime: 0.75
-  m_FireRate: 5
 --- !u!114 &5084237775244227614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5042,6 +5000,67 @@ MonoBehaviour:
   m_FullHealthColor: {r: 1, g: 0.7137255, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   m_ExplosionPrefab: {fileID: 151086, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 3}
+--- !u!114 &1770573051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089253391020346274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627446d065a32b840a61843cae8bf259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destination: {fileID: 0}
+--- !u!114 &1770573052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089253391020346274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3391e2a8452cda1448c146deabd95edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerNumber: 1
+  m_Shell: {fileID: 6019180038976095211, guid: 71f9b56a15d752c469fda0350c58af29, type: 3}
+  m_FireTransformright: {fileID: 5710459261820740767}
+  m_FireTransformleft: {fileID: 5710459260533404839}
+  m_ShootingAudio: {fileID: 4089253391020346278}
+  m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
+  m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
+  m_ShootDirection: 0
+  m_MinLaunchForce: 50
+  m_MaxLaunchForce: 50
+  m_MaxChargeTime: 0.75
+  m_FireRate: 15
+  useInvoke: 0
+  running: 0
+--- !u!195 &1770573061
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089253391020346274}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 10
+  m_Speed: 30
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 150
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &4089253391056970381
 GameObject:
   m_ObjectHideFlags: 0
