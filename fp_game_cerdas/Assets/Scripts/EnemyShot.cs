@@ -18,6 +18,9 @@ public class EnemyShot : MonoBehaviour
     public float m_MaxLaunchForce = 50f;        // The force given to the shell if the fire button is held for the max charge time.
     public float m_MaxChargeTime = 0.75f;       // How long the shell can charge for before it is fired at max force.
     public float m_FireRate = 15f;
+    public float shootAngle = 50f;
+
+    private GameObject goPlayer;
 
     private string m_FireButton;                // The input axis that is used for launching shells.
     private string m_AltFireButton;                // The input axis that is used for launching shells.
@@ -33,13 +36,16 @@ public class EnemyShot : MonoBehaviour
     //{
         // When the tank is turned on, reset the launch force and the UI
         //m_AimSlider = m_AimSliderLeft;
-        //m_CurrentLaunchForce = m_MinLaunchForce;
         //m_AimSlider.value = m_MinLaunchForce;
     //}
 
     // Start is called before the first frame update
     void Start()
     {
+        m_CurrentLaunchForce = m_MinLaunchForce;
+
+        goPlayer = GameObject.FindWithTag("Player");
+
         if (useInvoke)
              InvokeRepeating("TestInvoke", 0, 3);
         else
@@ -49,7 +55,16 @@ public class EnemyShot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_FireTransform = m_FireTransformleft;
+        Vector3 v3ToPlayer = goPlayer.transform.position - transform.position;
+ 
+        if (Vector3.Angle(v3ToPlayer, transform.right) < shootAngle) {
+            // Do the right side facing stuff
+            m_FireTransform = m_FireTransformright;
+        }  
+        else if (Vector3.Angle(v3ToPlayer, -transform.right) < shootAngle) {
+            // Do the left side facing stuff
+            m_FireTransform = m_FireTransformleft;
+        }
         
     }
 

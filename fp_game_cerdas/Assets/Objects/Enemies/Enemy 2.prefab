@@ -5038,6 +5038,7 @@ MonoBehaviour:
   m_MaxLaunchForce: 50
   m_MaxChargeTime: 0.75
   m_FireRate: 15
+  shootAngle: 20
   useInvoke: 0
   running: 0
 --- !u!195 &1770573061
