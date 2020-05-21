@@ -13,6 +13,7 @@ public class EnemyMove : MonoBehaviour
     void Start()
     {
         _navmeshAgent = this.GetComponent<NavMeshAgent>();
+        _destination = GameObject.FindWithTag("Player").transform;
     }
 
     void Update()
