@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &1655485310
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2365075548275880380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.498181
+  m_Center: {x: 0.0707612, y: 0.32643142, z: -0.041600045}
 --- !u!208 &8987092306265900954
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16,19 +29,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.071, y: 0.326, z: -0.042000003}
   m_TimeToStationary: 0.5
---- !u!135 &1655485310
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2365075548275880380}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.498181
-  m_Center: {x: 0.0707612, y: 0.32643142, z: -0.041600045}
 --- !u!1001 &2365075548275801892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,7 +38,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183960, guid: 491333d4c0bd88148813a9dde7fe955b, type: 3}
       propertyPath: m_Name
-      value: Rock Type4 03
+      value: Rock Type4 03 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 183960, guid: 491333d4c0bd88148813a9dde7fe955b, type: 3}
       propertyPath: m_Layer
@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 424140, guid: 491333d4c0bd88148813a9dde7fe955b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.036605
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 424140, guid: 491333d4c0bd88148813a9dde7fe955b, type: 3}
       propertyPath: m_LocalPosition.z
