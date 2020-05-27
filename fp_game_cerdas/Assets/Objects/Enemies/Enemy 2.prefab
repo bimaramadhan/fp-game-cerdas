@@ -5034,12 +5034,11 @@ MonoBehaviour:
   m_ShootingAudio: {fileID: 4089253391020346278}
   m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
-  m_ShootDirection: 0
   m_MinLaunchForce: 50
   m_MaxLaunchForce: 50
   m_MaxChargeTime: 0.75
-  shootDelay: 0
-  shootAngle: 20
+  shootDelay: 3
+  shootAngle: 90
   useInvoke: 0
   running: 0
 --- !u!195 &1770573061
@@ -5051,7 +5050,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4089253391020346274}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 25
+  m_Radius: 30
   m_Speed: 30
   m_Acceleration: 8
   avoidancePriority: 50
