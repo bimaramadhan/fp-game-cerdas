@@ -35,6 +35,7 @@ public class ShopControlScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+		coinText.text = " " + coin;
 
 		// buyButton1.interactable = false;	
 		// buyButton2.interactable = false;	
@@ -62,7 +63,7 @@ public class ShopControlScript : MonoBehaviour {
 		else
 			shop1Price.text = "Insufficent coin!";
 
-		coinText.text = " " + coin;
+		// coinText.text = " " + coin;
 
 	}
 	
@@ -78,7 +79,7 @@ public class ShopControlScript : MonoBehaviour {
 		else
 			shop2Price.text = "Insufficent coin";
 
-		coinText.text = " " + coin;
+		// coinText.text = " " + coin;
 	}
 	public void buyShop3()
 	{
@@ -91,7 +92,7 @@ public class ShopControlScript : MonoBehaviour {
 		else
 			shop3Price.text = "Insufficent coin";
 		
-		coinText.text = " " + coin;
+		// coinText.text = " " + coin;
 
 	}
 	public void buyShop4()
@@ -106,7 +107,7 @@ public class ShopControlScript : MonoBehaviour {
 			// buyButton4.interactable = false;	
 			shop4Price.text = "Insufficent coin";
 
-		coinText.text = " " + coin;
+		// coinText.text = " " + coin;
 
 	}
 }
