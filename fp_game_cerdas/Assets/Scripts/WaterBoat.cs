@@ -11,7 +11,7 @@ public class WaterBoat : MonoBehaviour
     public Transform Motor;
     public float SteerPower = 500f;
     public float Power = 5f;
-    public float MaxSpeed = 10f;
+    public static float MaxSpeed = 30f;
     public float Drag = 0.1f;
 
     //used Components

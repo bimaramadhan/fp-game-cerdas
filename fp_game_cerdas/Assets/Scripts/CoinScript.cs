@@ -11,6 +11,7 @@ public class CoinScript : MonoBehaviour
     void Start()
     {
         coin = GetComponent<Text> ();
+        // coinValue = 100;
     }
 
     // Update is called once per frame
