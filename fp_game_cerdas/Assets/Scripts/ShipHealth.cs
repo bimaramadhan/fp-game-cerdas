@@ -15,6 +15,8 @@ public class ShipHealth : MonoBehaviour
     private ParticleSystem m_ExplosionParticles;        // The particle system the will play when the Ship is destroyed.
     private float m_CurrentHealth;                      // How much health the Ship currently has.
     private bool m_Dead;                                // Has the Ship been reduced beyond zero health yet?
+	
+	public GameObject menuContainer;
 
 
     private void Awake ()
@@ -86,5 +88,7 @@ public class ShipHealth : MonoBehaviour
 
         // Turn the Ship off.
         gameObject.SetActive (false);
+		
+		menuContainer.SetActive (true);
     }
 }
